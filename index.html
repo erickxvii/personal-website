@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Erick Perez Portfolio</title>
+   <link rel="stylesheet" href="sizing.css">
+</head>
+<body>
+
+    <!-- Login Gate -->
+    <div id="login-gate">
+        <form id="login-form">
+            <h1>Enter Your Name</h1>
+            <input type="text" id="username" placeholder="Your Name" required>
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+
+    <!-- Welcome Section -->
+    <section class="landing-screen">
+        <h2 class="animated-text">Welcome, <span id="user-name"></span>! to Erick Perez Portfolio</h2>
+    </section>
+
+    <div class="scroll-arrow">
+        <span>&#x2193;</span> <!-- Down arrow Unicode character -->
+    </div>
+
+
+    <!-- Projects Section -->
+    <section id="projects-section"; class="projects-section">
+        <h3 class="animated-header" >My Projects:</h3>
+        <br>
+                <p>
+                    My name is Erick Perez. I’m currently in undergrad at Fordham University, double majoring in Math and Computer Information Science!
+                </p>
+           
+        <div class="container">
+            <div class="paragraph-container">
+                <p>
+                    My first project was made my freshman year when I learned about OOP in C++. I then went online and took a Python course at Udemy. On YouTube, I found a YOLOv8 video about an AI tracking motion camera project. This project would detect objects from a picture uploaded to it. I then redid this using my laptop's camera.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="paragraph-container">
+                 <p>
+                            Personal website: Designed and developed a fully functional personal portfolio website, 'Erick Perez Portfolio,' showcasing academic achievements, projects, and courses. The site integrates an interactive login feature with personalized user greetings stored using localStorage. Implemented smooth navigation via a dynamic hamburger menu and scrolling animations, enhancing user experience. The portfolio highlights projects in AI, programming, and web development, supported by responsive design using HTML, CSS, and JavaScript
+                 </p>
+                </div>   
+            </div>      
+        <div class="container">
+            <div class="paragraph-container">
+                            <p>
+                                Immigration rights website:
+Developed a personal website to showcase resources and support for communities, focusing on providing accessible information about immigrant rights, public benefits, and protections by state. The website integrates dynamic, user-interactive features using JavaScript, HTML, and CSS, allowing users to search and retrieve tailored state-specific legal and resource information seamlessly.
+
+                            </p> 
+                        </div>
+        </div>
+    </section>
+    <div class="scroll-arrow">
+        <span>&#x2193;</span> <!-- Down arrow Unicode character -->
+    </div>
+
+<br>
+    <!-- Courses Section -->
+    <section id="courses-section"; class="courses-section">
+        <h3 class="animated-header" >Courses Taken</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Semester</th>
+                    <th>Course</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spring 2024</td>
+                    <td>Computer Science 1</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Fall 2024</td>
+                    <td>Computer Science 2</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Fall 2024</td>
+                    <td>Discrete Structures 2</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>Spring 2025</td>
+                    <td>Linear Algebra</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Spring 2025</td>
+                    <td>Data Structures</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Spring 2025</td>
+                    <td>Discrete Math</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table> 
+    </section>
+
+    <div class="scroll-arrow">
+        <span>&#x2193;</span>
+    </div>
+
+
+    <section id="resume-section"; class="resume-section">
+        <h4 class="resume-section"> My resume:</h4>
+        <div class="resume-section">
+        <p>Click below to view or download my resume:</p>
+        <img src="files/resume-thumbnail.png" alt="Resume Thumbnail" class="resume-thumbnail" onclick="openModal()">
+    </div>
+    <div id="resume-modal" class="modal-container">
+        <div class="modal-content">
+            <button onclick="closeModal()" class="close-button">Close</button>
+            <iframe src="files/ErickPresume.pdf" class="modal-iframe"></iframe>
+        </div>
+    </div>
+    </section>
+
+     <!--Contact section-->
+     <br>
+     <section id="contact-section"; class="contact-section">
+        <h5 class="animated-header" >Contact me</h4>
+        <div class="contact-info">
+        <p>Personal email: ebperez05@gmail.com</p>
+        <p>Phone number: +1(929)-240-1473</p>
+        <p>School email: eperez109@fordhdam.edu</p>
+    </div>
+     </section>
+
+     <!-- Hamburger Menu -->
+<div class="hamburger-menu" id="hamburger-menu">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
+<!-- Sidebar Menu -->
+<nav class="side-menu" id="side-menu">
+    <ul>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#courses-section">Courses</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+    </ul>
+</nav>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

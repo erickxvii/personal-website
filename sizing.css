@@ -1,0 +1,315 @@
+/* Login Gate */
+#login-gate {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+    color: rgb(245, 230, 211); 
+}
+
+
+#login-form {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    width: 300px;
+    padding: 40px;
+    background-color: rgba(109, 79, 118, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
+}
+
+/* Style for the input field */
+#login-form input {
+    display: block;
+    margin: 20px auto;
+    padding: 15px; 
+    width: 80%; 
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem; 
+    border: 1px solid rgba(118, 101, 122, 0.5); 
+    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #fff; 
+    outline: none;
+}
+
+/* Style for the submit button */
+#login-form button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem; 
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(209, 161, 209);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#login-form button:hover {
+    background-color: rgb(142, 41, 125); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML Styling */
+body, html {
+    margin: 0;
+    padding: 0;  
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background: linear-gradient(65deg, #1e1e1e, #4b225d);
+    background-attachment: fixed;
+    color: rgb(245, 230, 211);
+}
+section {
+    width: 100%;
+    min-height: 100vh; 
+    background: inherit; 
+}
+
+
+/* Landing Screen Styling */
+.landing-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Scroll Arrow */
+.scroll-arrow {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem; 
+    color: rgba(227, 153, 206, 0.7); 
+    animation: bounce 1.5s infinite; 
+    cursor: pointer; 
+}
+
+.scroll-arrow span:hover {
+    color: #8b4baf; 
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translate(-50%, 0);
+    }
+    40% {
+        transform: translate(-50%, -10px);
+    }
+    60% {
+        transform: translate(-50%, -5px);
+    }
+}
+
+
+.animated-text {
+    color: rgb(182, 99, 160);
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Projects Section */
+.projects-section, .courses-section, .contact-section, .resume-section { 
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+#resume-section {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#resume-section h4 {
+    font-size: 3rem;
+    color: rgb(182, 99, 160);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.resume-thumbnail {
+    width: 300px;
+    cursor: pointer;
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-button {
+    position: center;
+    top: 10px;
+    right: 10px;
+    background: rgb(236, 157, 226);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.paragraph-container {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid rgb(133, 107, 131);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(245, 230, 211);
+    color: rgb(26, 24, 23);
+}
+
+/* Contact section */
+.contact-section {
+    text-align: center; 
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    width: 60%; 
+    color: #fff;
+}
+
+.contact-info p {
+    margin: 15px 0; 
+}
+
+/* Animated Header Styles */
+.animated-header {
+    font-size: 3rem; 
+    color: rgb(182, 99, 160);
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 3.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Hamburger Menu Icon */
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-menu .line {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(235, 204, 236);
+    margin: 7px 0;
+    transition: all 3s ease;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -150px; 
+    width: 100px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 1.5s ease;
+    z-index: 999;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: rgb(186, 108, 178);
+    font-size: 1rem;
+    transition: color 0.5s ease;
+}
+
+.side-menu ul li a:hover {
+    color: #d285ff;
+}
+
+/* Active Menu (when open) */
+.side-menu.open {
+    left: 0; 
+}
